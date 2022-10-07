@@ -48,7 +48,15 @@ def iniciar():
                 print(m)
             
         if opcion == '4':
-            print("Añadiendo un cliente...\n")
+            print("Controlando errores\n")
+            lista = [4, 7, 30, 23, 5]
+            paises = { "españa":"español", "eeuu":"inglés", "italia":"italiano" } 
+            error = e4.Errores()
+            error.errores(7/2, ZeroDivisionError)
+            error.errores(7/2, ZeroDivisionError)
+            error.errores(lista[10],IndexError)
+            error.errores(paises["alemania"], KeyError)
+            error.errores("2" + 10, TypeError)
                 
         if opcion == '5':
            print("Añadiendo un cliente...\n")
