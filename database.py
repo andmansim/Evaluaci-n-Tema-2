@@ -4,10 +4,11 @@ class Alumno:
         self.nombre = nombre
         self.nota = nota
     def __str__(self):
-        return 
+        
+        return 'El alumno ' + str(self.nombre) + ' se ha añadido correctamente'
     
     @staticmethod
-    def clasificaion(self):
+    def clasificacion(self):
         if self.nota <= 5:
             print('El alumno ha aprobado')
         else:
