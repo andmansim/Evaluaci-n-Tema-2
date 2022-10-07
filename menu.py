@@ -63,4 +63,5 @@ def iniciar():
         if opcion == '5':
            print("Herencia\n")
            c = e5.Coche("azul", 4, 150, 1200)
+           print(c)
        
