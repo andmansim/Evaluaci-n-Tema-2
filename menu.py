@@ -44,9 +44,8 @@ def iniciar():
             for key, value in p.items():
                 
                 producto = e3.Producto(value[0], key, value[1], value[2])
-                b = producto.buscar(key)
-                c = producto.crear(value[0], key, value[1], value[2])
-                m = producto.modificar(value[0], key, value[1], value[2])
+                
+                m = producto.modificar(7)
                 print(m)
             
         if opcion == '4':
