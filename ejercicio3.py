@@ -12,28 +12,28 @@ class Producto:
     
         
     
-class Productos:
+
     lista = []
     
     
     def buscar(nombre):
-        for producto in Productos.lista: #busca en la lista que hemos creado antes
+        for producto in Producto.lista: #busca en la lista que hemos creado antes
             if producto.nombre == nombre:
                 return producto
             
     
     def crear(codigo, nombre, precio, tipo):
-        producto = Productos(codigo, nombre, precio, tipo) #llamamos a la clase Cliente
-        Productos.lista.append(producto)
-        Productos.guardar()
+        producto = Producto(codigo, nombre, precio, tipo) #llamamos a la clase Cliente
+        Producto.lista.append(producto)
+        Producto.guardar()
         return producto
     
     
     def modificar(codigo, nombre, precio, tipo):
-        for indice, producto in enumerate(Productos.lista):
+        for indice, producto in enumerate(Producto.lista):
             if producto.nombre == nombre: #cliente nos recorre la lita, pero esta se compone de objetos de las clases, por eso podemos poner el .dni. Pq va asociado a la clase Clientes
-                Productos.lista[indice].precio = precio
-                Productos.guardar()
-                return Productos.lista[indice]
+                Producto.lista[indice].precio = precio
+                Producto.guardar()
+                return Producto.lista[indice]
         
         
