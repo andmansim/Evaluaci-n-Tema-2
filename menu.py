@@ -1,7 +1,7 @@
 import ejercicios as e
 import ejercicio3 as e3
 import ejercicio4 as e4
-import ejercicio5 as e4
+import ejercicio5 as e5
 
 def iniciar():
     while True:
@@ -62,5 +62,5 @@ def iniciar():
                 
         if opcion == '5':
            print("Herencia\n")
-           print('No está disponible')
+           c = e5.Coche("azul", 4, 150, 1200)
        
