@@ -25,7 +25,6 @@ class Producto:
     def crear(codigo, nombre, precio, tipo):
         producto = Producto(codigo, nombre, precio, tipo) #llamamos a la clase Cliente
         Producto.lista.append(producto)
-        Producto.guardar()
         return producto
     
     
@@ -33,7 +32,7 @@ class Producto:
         for indice, producto in enumerate(Producto.lista):
             if producto.nombre == nombre: #cliente nos recorre la lita, pero esta se compone de objetos de las clases, por eso podemos poner el .dni. Pq va asociado a la clase Clientes
                 Producto.lista[indice].precio = precio
-                Producto.guardar()
+
                 return Producto.lista[indice]
         
         
