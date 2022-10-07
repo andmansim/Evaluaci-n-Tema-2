@@ -38,7 +38,7 @@ def iniciar():
             print("Productos de la tienda\n")
             p = {'leche': ['08685', 4, 'comida'], 'zapatos':['46328',  10, 'ropa'], 'móvil': ['08685', 300, 'tecnología'] }
            
-            for key, value in p:
+            for key, value in p.items():
                 
                 producto = e3.Producto(value[0], key, value[1], value[2])
                 b = producto.buscar(key)
