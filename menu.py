@@ -1,4 +1,4 @@
-import database as db
+import ejercicios as e
 def iniciar():
     while True:
         
@@ -17,14 +17,20 @@ def iniciar():
             print("Alumnos\n")
             a = {'Diego': 3, 'Carlota': 8, 'Pepe': 6}
             for key, value in a.items():
-                alumno = db.Alumno(key, value)
+                alumno = e.Alumno(key, value)
                 print(alumno)
                 ap = alumno.clasificacion()
 
             
                 
         if opcion == '2':
-            print("Buscando un cliente...\n")
+            print("Clase alumno modificada\n")
+            print("Alumnos\n")
+            a = {'Diego': 3, 'Carlota': 8, 'Pepe': 6}
+            for key, value in a.items():
+                alumno = e.Alumno(key, value)
+                print(alumno)
+                ap = alumno.clasificacion()
             
         
         if opcion == '3':
