@@ -36,13 +36,11 @@ def iniciar():
         
         if opcion == '3':
             print("Productos de la tienda\n")
-            p = [['08685','leche', 4, 'comida'], 
-                 ['46328', 'zapatos', 10, 'ropa'], 
-                 ['08685','móvil', 300, 'tecnología']]
-            for i in p:
-                for j in len(p):
-                    print(i[j])
-            #producto = e3.Producto()
+            p = {'leche': ['08685', 4, 'comida'], 'zapatos':['46328',  10, 'ropa'], 'móvil': ['08685', 300, 'tecnología'] }
+           
+            for key, value in p:
+                
+                producto = e3.Producto(value[0], key, value[1], value[2])
             
         if opcion == '4':
             print("Añadiendo un cliente...\n")
