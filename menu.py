@@ -59,5 +59,6 @@ def iniciar():
             error.errores("2" + 10, TypeError)
                 
         if opcion == '5':
-           print("Añadiendo un cliente...\n")
+           print("Herencia\n")
+           print('No está disponible')
        
