@@ -1,4 +1,5 @@
 import ejercicios as e
+import ejercicio3 as e3
 def iniciar():
     while True:
         
@@ -34,7 +35,14 @@ def iniciar():
             
         
         if opcion == '3':
-            print("Añadiendo un cliente...\n")
+            print("Productos de la tienda\n")
+            p = [['08685','leche', 4, 'comida'], 
+                 ['46328', 'zapatos', 10, 'ropa'], 
+                 ['08685','móvil', 300, 'tecnología']]
+            for i in p:
+                for j in len(p):
+                    print(i[j])
+            #producto = e3.Producto()
             
         if opcion == '4':
             print("Añadiendo un cliente...\n")
